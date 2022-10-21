@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SmokeTest"
+           tests="5"
+           failures="2"
+           errors="0"
+           skipped="2"
+           time="-1666363733.770">
+  <properties />
+            <testcase name="closing" time="0.021" classname="com.atomation.test.test2">
+                <failure type="org.openqa.selenium.remote.http.ConnectionFailedException"
+                  message="Unable to establish websocket connection to http://localhost:62675/devtools/browser/e3b99621-8c48-46b8-afa2-1406782e6a79
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;shakils-Air.lan&apos;, ip: &apos;2603:7000:e200:e37c:0:0:0:1fb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: driver.version: RemoteWebDriver"
+              >
+<![CDATA[org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:62675/devtools/browser/e3b99621-8c48-46b8-afa2-1406782e6a79
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'shakils-Air.lan', ip: '2603:7000:e200:e37c:0:0:0:1fb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: driver.version: RemoteWebDriver
+  org.openqa.selenium.remote.http.netty.NettyWebSocket.<init>(NettyWebSocket.java:104)
+  org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:137)
+  org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:127)
+  org.openqa.selenium.devtools.Connection.<init>(Connection.java:77)
+  org.openqa.selenium.firefox.FirefoxDriver.maybeGetDevTools(FirefoxDriver.java:359)
+  org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:441)
+  com.atomation.test.test2.closing(test2.java:83)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+  org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+  org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+  org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+  org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+  org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:794)
+  org.testng.TestRunner.run(TestRunner.java:596)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+  org.testng.SuiteRunner.run(SuiteRunner.java:276)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+  org.testng.TestNG.runSuites(TestNG.java:1063)
+  org.testng.TestNG.run(TestNG.java:1031)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="fftest" time="21.210" classname="com.atomation.test.test2">
+                <failure type="org.openqa.selenium.ElementNotInteractableException"
+                  message="Element &lt;a class=&quot;menu-link sub-menu-link&quot; href=&quot;https://www.optimalworkshop.com/recruit/&quot;&gt; could not be scrolled into view
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;shakils-Air.lan&apos;, ip: &apos;2603:7000:e200:e37c:0:0:0:1fb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6&apos;, java.version: &apos;18.0.1.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ee046b11-7676-4b3f-87d4-9ea76711a937, clickElement {id=237be60c-336c-4dcb-9356-4ba157dbe03b}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220718155818, moz:debuggerAddress: localhost:62675, moz:geckodriverVersion: 0.31.0, moz:headless: true, moz:platformVersion: 21.6.0, moz:processID: 2409, moz:profile: /var/folders/r6/6nq9ybbj4b9..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62675/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (ee046b11-7676-4b3f-87d4-9ea76711a937)] -&gt; xpath: //li[@id=&apos;nav-menu-item-100&apos;]//a[@class=&apos;menu-link sub-menu-link&apos;][normalize-space()=&apos;Participant recruitment&apos;]]
+Session ID: ee046b11-7676-4b3f-87d4-9ea76711a937"
+              >
+<![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a class="menu-link sub-menu-link" href="https://www.optimalworkshop.com/recruit/"> could not be scrolled into view
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'shakils-Air.lan', ip: '2603:7000:e200:e37c:0:0:0:1fb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ee046b11-7676-4b3f-87d4-9ea76711a937, clickElement {id=237be60c-336c-4dcb-9356-4ba157dbe03b}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220718155818, moz:debuggerAddress: localhost:62675, moz:geckodriverVersion: 0.31.0, moz:headless: true, moz:platformVersion: 21.6.0, moz:processID: 2409, moz:profile: /var/folders/r6/6nq9ybbj4b9..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62675/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on MAC (ee046b11-7676-4b3f-87d4-9ea76711a937)] -> xpath: //li[@id='nav-menu-item-100']//a[@class='menu-link sub-menu-link'][normalize-space()='Participant recruitment']]
+Session ID: ee046b11-7676-4b3f-87d4-9ea76711a937
+  java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+  java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+  java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+  org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+  org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+  org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+  com.automation.base.PageBase.clickParticipantRecruitmentTab(PageBase.java:223)
+  com.atomation.test.test2.fftest(test2.java:52)
+  java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+  java.base/java.lang.reflect.Method.invoke(Method.java:577)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+  org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+  org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+  org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+  org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+  org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+  java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+  org.testng.TestRunner.privateRun(TestRunner.java:794)
+  org.testng.TestRunner.run(TestRunner.java:596)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+  org.testng.SuiteRunner.run(SuiteRunner.java:276)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+  org.testng.TestNG.runSuites(TestNG.java:1063)
+  org.testng.TestNG.run(TestNG.java:1031)
+  org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+      </failure>
+
+          </testcase>
+  
+            <testcase name="closing" time="0.0" classname="com.atomation.test.test2">
+          <skipped />
+    </testcase>
+            <testcase name="ieTest" time="0.0" classname="com.atomation.test.test2">
+          <skipped />
+    </testcase>
+  
+            <testcase name="chromeTest" time="61.456" classname="com.atomation.test.test2" />
+      
+</testsuite>
