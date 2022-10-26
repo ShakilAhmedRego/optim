@@ -18,8 +18,8 @@ public class test1 extends PageBase {
 //		driverfactory.createInstance("chrome");
 //		driverfactory.createInstance("chromeHTML");
 
-//		driverfactory.createInstance("firefox");
-		driverfactory.createInstance("firefoxHTML");
+		driverfactory.createInstance("firefox");
+//		driverfactory.createInstance("firefoxHTML");
 
 //		driverfactory.createInstance("edge");
 //		driverfactory.createInstance("edgeHTML");

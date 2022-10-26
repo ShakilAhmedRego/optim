@@ -80,7 +80,7 @@ public class test2 extends PageBase {
 	@AfterMethod
 	public void closing() {
 //		takescreenshot();
-		driver.close();
+//		driver.close();
 		driver.quit();
 
 	}
