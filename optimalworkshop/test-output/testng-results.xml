@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-28T19:24:02 EDT" name="Suite" finished-at="2022-10-28T19:24:30 EDT" duration-ms="28502">
+  <suite started-at="2022-10-29T00:57:56 EDT" name="Suite" finished-at="2022-10-29T00:58:23 EDT" duration-ms="26842">
     <groups>
     </groups>
-    <test started-at="2022-10-28T19:24:02 EDT" name="SmokeTest" finished-at="2022-10-28T19:24:30 EDT" duration-ms="28502">
+    <test started-at="2022-10-29T00:57:56 EDT" name="SmokeTest" finished-at="2022-10-29T00:58:23 EDT" duration-ms="26842">
       <class name="com.atomation.test.test1">
-        <test-method is-config="true" signature="initiate()[pri:0, instance:com.atomation.test.test1@147e2ae7]" started-at="2022-10-28T19:24:02 EDT" name="initiate" finished-at="2022-10-28T19:24:09 EDT" duration-ms="7244" status="PASS">
+        <test-method is-config="true" signature="initiate()[pri:0, instance:com.atomation.test.test1@2d29b4ee]" started-at="2022-10-29T00:57:56 EDT" name="initiate" finished-at="2022-10-29T00:58:03 EDT" duration-ms="6890" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiate -->
-        <test-method signature="Test1()[pri:0, instance:com.atomation.test.test1@147e2ae7]" started-at="2022-10-28T19:24:09 EDT" name="Test1" finished-at="2022-10-28T19:24:30 EDT" duration-ms="20569" status="FAIL">
+        <test-method signature="Test1()[pri:0, instance:com.atomation.test.test1@2d29b4ee]" started-at="2022-10-29T00:58:03 EDT" name="Test1" finished-at="2022-10-29T00:58:22 EDT" duration-ms="19312" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to locate element: //a[@class='menu-link main-menu-link'][normalize-space()='Team plans']
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'shakils-Air.lan', ip: '2603:7000:e200:e37c:0:0:0:1fb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+System info: host: 'shakils-Air.cable.rcn.com', ip: 'fe80:0:0:0:1c64:5df9:3289:3e2b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [4d7936fe-58bb-4b8f-934c-0d6ef52044d6, findElement {using=xpath, value=//a[@class='menu-link main-menu-link'][normalize-space()='Team plans']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220718155818, moz:debuggerAddress: localhost:64643, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 19576, moz:profile: /var/folders/r6/6nq9ybbj4b9..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64643/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4d7936fe-58bb-4b8f-934c-0d6ef52044d6]]>
+Command: [ef965744-512f-4c15-8250-33e2b5cc980b, findElement {using=xpath, value=//a[@class='menu-link main-menu-link'][normalize-space()='Team plans']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220718155818, moz:debuggerAddress: localhost:61622, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 20403, moz:profile: /var/folders/r6/6nq9ybbj4b9..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:61622/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ef965744-512f-4c15-8250-33e2b5cc980b]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@class='menu-link main-menu-link'][normalize-space()='Team plans']
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'shakils-Air.lan', ip: '2603:7000:e200:e37c:0:0:0:1fb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+System info: host: 'shakils-Air.cable.rcn.com', ip: 'fe80:0:0:0:1c64:5df9:3289:3e2b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [4d7936fe-58bb-4b8f-934c-0d6ef52044d6, findElement {using=xpath, value=//a[@class='menu-link main-menu-link'][normalize-space()='Team plans']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220718155818, moz:debuggerAddress: localhost:64643, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 19576, moz:profile: /var/folders/r6/6nq9ybbj4b9..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64643/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4d7936fe-58bb-4b8f-934c-0d6ef52044d6
+Command: [ef965744-512f-4c15-8250-33e2b5cc980b, findElement {using=xpath, value=//a[@class='menu-link main-menu-link'][normalize-space()='Team plans']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220718155818, moz:debuggerAddress: localhost:61622, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 20403, moz:profile: /var/folders/r6/6nq9ybbj4b9..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:61622/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: ef965744-512f-4c15-8250-33e2b5cc980b
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -80,7 +80,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test1 -->
-        <test-method is-config="true" signature="closing()[pri:0, instance:com.atomation.test.test1@147e2ae7]" started-at="2022-10-28T19:24:30 EDT" name="closing" finished-at="2022-10-28T19:24:30 EDT" duration-ms="489" status="PASS">
+        <test-method is-config="true" signature="closing()[pri:0, instance:com.atomation.test.test1@2d29b4ee]" started-at="2022-10-29T00:58:22 EDT" name="closing" finished-at="2022-10-29T00:58:23 EDT" duration-ms="453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closing -->
