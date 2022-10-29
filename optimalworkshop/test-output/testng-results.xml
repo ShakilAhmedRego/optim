@@ -1,41 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-26T11:43:08 EDT" name="Default suite" finished-at="2022-10-26T11:45:36 EDT" duration-ms="148430">
+  <suite started-at="2022-10-28T19:24:02 EDT" name="Suite" finished-at="2022-10-28T19:24:30 EDT" duration-ms="28502">
     <groups>
     </groups>
-    <test started-at="2022-10-26T11:43:08 EDT" name="Default test" finished-at="2022-10-26T11:45:36 EDT" duration-ms="148430">
-      <class name="com.atomation.test.test2">
-        <test-method signature="chromeTest()[pri:1, instance:com.atomation.test.test2@4f209819]" started-at="2022-10-26T11:43:08 EDT" name="chromeTest" finished-at="2022-10-26T11:44:10 EDT" duration-ms="62822" status="PASS">
+    <test started-at="2022-10-28T19:24:02 EDT" name="SmokeTest" finished-at="2022-10-28T19:24:30 EDT" duration-ms="28502">
+      <class name="com.atomation.test.test1">
+        <test-method is-config="true" signature="initiate()[pri:0, instance:com.atomation.test.test1@147e2ae7]" started-at="2022-10-28T19:24:02 EDT" name="initiate" finished-at="2022-10-28T19:24:09 EDT" duration-ms="7244" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- chromeTest -->
-        <test-method is-config="true" signature="closing()[pri:0, instance:com.atomation.test.test2@4f209819]" started-at="2022-10-26T11:44:10 EDT" name="closing" finished-at="2022-10-26T11:44:11 EDT" duration-ms="134" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closing -->
-        <test-method signature="fftest()[pri:2, instance:com.atomation.test.test2@4f209819]" started-at="2022-10-26T11:44:11 EDT" name="fftest" finished-at="2022-10-26T11:44:23 EDT" duration-ms="12362" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        </test-method> <!-- initiate -->
+        <test-method signature="Test1()[pri:0, instance:com.atomation.test.test1@147e2ae7]" started-at="2022-10-28T19:24:09 EDT" name="Test1" finished-at="2022-10-28T19:24:30 EDT" duration-ms="20569" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Element <a class="menu-link sub-menu-link" href="https://www.optimalworkshop.com/demos/"> could not be scrolled into view
+              <![CDATA[Unable to locate element: //a[@class='menu-link main-menu-link'][normalize-space()='Team plans']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'shakils-Air.cable.rcn.com', ip: 'fe80:0:0:0:1c64:5df9:3289:3e2b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+System info: host: 'shakils-Air.lan', ip: '2603:7000:e200:e37c:0:0:0:1fb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [3edc0fbb-94c0-4014-b87a-6e5582010b7b, clickElement {id=7c7fd11b-eede-472f-a7e3-ee421c368ce1}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220718155818, moz:debuggerAddress: localhost:62136, moz:geckodriverVersion: 0.31.0, moz:headless: true, moz:platformVersion: 21.6.0, moz:processID: 1177, moz:profile: /var/folders/r6/6nq9ybbj4b9..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62136/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on MAC (3edc0fbb-94c0-4014-b87a-6e5582010b7b)] -> xpath: //li[@id='nav-menu-item-1116']//a[@class='menu-link sub-menu-link'][normalize-space()='Product demos']]
-Session ID: 3edc0fbb-94c0-4014-b87a-6e5582010b7b]]>
+Command: [4d7936fe-58bb-4b8f-934c-0d6ef52044d6, findElement {using=xpath, value=//a[@class='menu-link main-menu-link'][normalize-space()='Team plans']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220718155818, moz:debuggerAddress: localhost:64643, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 19576, moz:profile: /var/folders/r6/6nq9ybbj4b9..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64643/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4d7936fe-58bb-4b8f-934c-0d6ef52044d6]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a class="menu-link sub-menu-link" href="https://www.optimalworkshop.com/demos/"> could not be scrolled into view
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@class='menu-link main-menu-link'][normalize-space()='Team plans']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'shakils-Air.cable.rcn.com', ip: 'fe80:0:0:0:1c64:5df9:3289:3e2b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
+System info: host: 'shakils-Air.lan', ip: '2603:7000:e200:e37c:0:0:0:1fb5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.1.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [3edc0fbb-94c0-4014-b87a-6e5582010b7b, clickElement {id=7c7fd11b-eede-472f-a7e3-ee421c368ce1}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220718155818, moz:debuggerAddress: localhost:62136, moz:geckodriverVersion: 0.31.0, moz:headless: true, moz:platformVersion: 21.6.0, moz:processID: 1177, moz:profile: /var/folders/r6/6nq9ybbj4b9..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62136/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on MAC (3edc0fbb-94c0-4014-b87a-6e5582010b7b)] -> xpath: //li[@id='nav-menu-item-1116']//a[@class='menu-link sub-menu-link'][normalize-space()='Product demos']]
-Session ID: 3edc0fbb-94c0-4014-b87a-6e5582010b7b
+Command: [4d7936fe-58bb-4b8f-934c-0d6ef52044d6, findElement {using=xpath, value=//a[@class='menu-link main-menu-link'][normalize-space()='Team plans']}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220718155818, moz:debuggerAddress: localhost:64643, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 19576, moz:profile: /var/folders/r6/6nq9ybbj4b9..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64643/devtoo..., se:cdpVersion: 85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4d7936fe-58bb-4b8f-934c-0d6ef52044d6
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -46,10 +42,12 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at com.automation.base.PageBase.clickProductDemos(PageBase.java:234)
-at com.atomation.test.test2.fftest(test2.java:53)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at com.automation.base.PageBase.clickTeamPLans(PageBase.java:302)
+at com.atomation.test.test1.Test1(test1.java:44)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -78,23 +76,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fftest -->
-        <test-method is-config="true" signature="closing()[pri:0, instance:com.atomation.test.test2@4f209819]" started-at="2022-10-26T11:44:23 EDT" name="closing" finished-at="2022-10-26T11:44:23 EDT" duration-ms="470" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closing -->
-        <test-method signature="ieTest()[pri:3, instance:com.atomation.test.test2@4f209819]" started-at="2022-10-26T11:44:23 EDT" name="ieTest" finished-at="2022-10-26T11:45:36 EDT" duration-ms="72376" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ieTest -->
-        <test-method is-config="true" signature="closing()[pri:0, instance:com.atomation.test.test2@4f209819]" started-at="2022-10-26T11:45:36 EDT" name="closing" finished-at="2022-10-26T11:45:36 EDT" duration-ms="174" status="PASS">
+        </test-method> <!-- Test1 -->
+        <test-method is-config="true" signature="closing()[pri:0, instance:com.atomation.test.test1@147e2ae7]" started-at="2022-10-28T19:24:30 EDT" name="closing" finished-at="2022-10-28T19:24:30 EDT" duration-ms="489" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closing -->
-      </class> <!-- com.atomation.test.test2 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.atomation.test.test1 -->
+    </test> <!-- SmokeTest -->
+  </suite> <!-- Suite -->
 </testng-results>
