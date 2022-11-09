@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.atomation.test.test2">
+      <class name="com.atomation.test.test1">
         <methods>
+          <include name="Test1"/>
+          <include name="initiate"/>
           <include name="closing"/>
-          <include name="fftest"/>
-          <include name="ieTest"/>
         </methods>
-      </class> <!-- com.atomation.test.test2 -->
+      </class> <!-- com.atomation.test.test1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

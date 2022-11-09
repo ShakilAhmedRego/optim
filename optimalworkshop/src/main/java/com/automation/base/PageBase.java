@@ -2,7 +2,6 @@ package com.automation.base;
 
 import java.time.Duration;
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,7 +10,6 @@ import org.openqa.selenium.support.ui.LoadableComponent;
 import org.openqa.selenium.support.ui.Select;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import com.automation.pricing.Pricing;
 import com.automation.product.CardSorting;
 import com.automation.product.FirstclickTesting;
@@ -36,7 +34,6 @@ import com.automation.solutions.Solutions;
 import com.automation.solutions.UXDesign;
 import com.automation.solutions.UserResearch;
 import com.automation.teamplan.TeamPlans;
-//import org.sl4j.LoggerFactory;
 
 /**
  * 
