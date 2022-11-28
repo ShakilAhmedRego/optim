@@ -8,7 +8,8 @@ import com.automation.base.PageBase;
 import com.automation.ui.UIAction;
 
 public class Pricing extends PageBase{
-public UIAction action = new UIAction();
+	
+	public UIAction action = new UIAction();
 	
 	public Pricing (final LoadableComponent<?> parent, WebDriver driver) {
 		PageBase.driver = driver;

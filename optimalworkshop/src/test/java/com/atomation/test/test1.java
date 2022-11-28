@@ -15,10 +15,10 @@ public class test1 extends PageBase {
 	@BeforeMethod
 	public void initiate() throws Exception {
 
-//		driverfactory.createInstance("chrome");
+		driverfactory.createInstance("chrome");
 //		driverfactory.createInstance("chromeHTML");
 
-		driverfactory.createInstance("firefox");
+//		driverfactory.createInstance("firefox");
 //		driverfactory.createInstance("firefoxHTML");
 
 //		driverfactory.createInstance("edge");
@@ -41,11 +41,11 @@ public class test1 extends PageBase {
 				.validateTitle().clickTreeTestingTab().validateTitle().clickOnlineSurveysTab().validateTitle()
 				.clickFirstclickTestingTab().validateTitle().clickParticipantRecruitmentTab().validateTitle()
 				.clickProductDemos().validateTitle().clickUserResearch().validateTitle().clickUXDesign().validateTitle()
-				.clickInformationA().validateTitle().clickPricing().validateTitle().clickTeamPLans().validateTitle()
+				.clickInformationA().validateTitle().clickPricing().validateTitle().clickEnterprise().validateTitle()
 				.clickTreetesting101Tab().validateTitle().clickCardsorting101tab().validateTitle()
-				.clickFirstclickTesting101().validateTitle().clickUsabilityTesting101().validateTitle().clickBlog()
-				.validateTitle().clickCaseStudies().validateTitle().clickViewAll().validateTitle().clickHelpCenter()
-				.validateTitle();
+				.clickFirstclickTesting101().validateTitle().clickInformationArchitecture101().validateTitle()
+				.clickUsabilityTesting101().validateTitle().clickBlog().validateTitle().clickCaseStudies().validateTitle()
+				.clickViewAll().validateTitle().clickHelpCenter().validateTitle();
 
 	}
 

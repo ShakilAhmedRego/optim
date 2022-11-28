@@ -10,6 +10,8 @@ import org.openqa.selenium.support.ui.LoadableComponent;
 import org.openqa.selenium.support.ui.Select;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.automation.enterprise.Enterprise;
 import com.automation.pricing.Pricing;
 import com.automation.product.CardSorting;
 import com.automation.product.FirstclickTesting;
@@ -25,6 +27,7 @@ import com.automation.resources.CardSorting101;
 import com.automation.resources.CaseStudies;
 import com.automation.resources.FirstclickTesting101;
 import com.automation.resources.HelpCenter;
+import com.automation.resources.InformationArchitecture101;
 import com.automation.resources.Resources;
 import com.automation.resources.TreeTesting101;
 import com.automation.resources.UsabilityTesting101;
@@ -33,7 +36,6 @@ import com.automation.solutions.InformationArchitecture;
 import com.automation.solutions.Solutions;
 import com.automation.solutions.UXDesign;
 import com.automation.solutions.UserResearch;
-import com.automation.teamplan.TeamPlans;
 
 /**
  * 
@@ -296,13 +298,13 @@ public class PageBase extends LoadableComponent<PageBase> {
 		return new Pricing();
 	}
 
-	public TeamPlans clickTeamPLans() {
-		logger.info(methAccssed + getClass().getName() + "clickTeamPLans");
-		WebElement clickTeamPLans = driver
-				.findElement(By.xpath("//a[@class='menu-link main-menu-link'][normalize-space()='Team plans']"));
-		clickTeamPLans.click();
-		logger.info(methoExited + getClass().getName() + "clickTeamPLans");
-		return new TeamPlans();
+	public Enterprise clickEnterprise() {
+		logger.info(methAccssed + getClass().getName() + "clickEnterprise");
+		WebElement clickEnterprise = driver
+				.findElement(By.xpath("//a[normalize-space()='Enterprise']"));
+		clickEnterprise.click();
+		logger.info(methoExited + getClass().getName() + "clickEnterprise");
+		return new Enterprise();
 	}
 
 //	this is where click dropdowna and find subject .
@@ -362,6 +364,22 @@ public class PageBase extends LoadableComponent<PageBase> {
 		clickFirstclickTesting101.click();
 		logger.info(methoExited + getClass().getName() + "clickFirstclickTesting101");
 		return new FirstclickTesting101();
+
+	}
+	public InformationArchitecture101 clickInformationArchitecture101() {
+		logger.info(methAccssed + getClass().getName() + "clickInformationArchitecture101");
+		Actions actions = new Actions(driver);
+		WebElement we = driver.findElement(By.xpath("//a[normalize-space()='Resources']"));
+		actions.moveToElement(we).build().perform();
+		Actions actions1 = new Actions(driver);
+		WebElement we1 = driver
+				.findElement(By.xpath("//span[normalize-space()='Put methods into practice using our tools']"));
+		actions1.moveToElement(we1).build().perform();
+		WebElement clickInformationArchitecture101 = driver
+				.findElement(By.xpath("//a[normalize-space()='Information Architecture 101']"));
+		clickInformationArchitecture101.click();
+		logger.info(methoExited + getClass().getName() + "clickInformationArchitecture101");
+		return new InformationArchitecture101();
 
 	}
 
