@@ -24,6 +24,7 @@ public UIAction action = new UIAction();
 		logger.info(methAccssed + getClass().getName() + "clickUserResearch");
 		WebElement userresearchText = driver.findElement(By.xpath("//h1[normalize-space()='Understand how your users think quickly and easily']"));
 		String expected_title = "Understand how your users think quickly and easily";
+//				"Understand how\\n\" + \"your users think\\n\" + \"quickly and easily";
 		action.softAssert(userresearchText, expected_title);
 		logger.info(methoExited + getClass().getName() + "clickUserResearch");
 		return this;
@@ -32,8 +33,8 @@ public UIAction action = new UIAction();
 		// TODO Auto-generated method stub
 		
 	}
-
-
+	
+	
 	protected void isLoaded() throws Error {
 		// TODO Auto-generated method stub
 		

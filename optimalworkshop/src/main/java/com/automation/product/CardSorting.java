@@ -28,8 +28,9 @@ public class CardSorting extends PageBase {
 	
 	public CardSorting validateTitle() {
 		logger.info(methAccssed + getClass().getName() + "clickCardSortingTab");
-		WebElement cardsortingText= driver.findElement(By.xpath("//h1[@id='discover-how-people-categorize-information']"));
-		String expected_title = "Discover how people categorize information";
+		WebElement cardsortingText= driver.findElement
+				(By.xpath("//h1[@id='discover-how-people-categorize-information']"));
+		String expected_title = "Understand how people group and label information";
 		action.softAssert(cardsortingText, expected_title);
 		logger.info(methoExited + getClass().getName() + "clickCardSortingTab");
 		return this;

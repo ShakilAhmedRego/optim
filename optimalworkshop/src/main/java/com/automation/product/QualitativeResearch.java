@@ -26,7 +26,8 @@ public class QualitativeResearch extends PageBase {
 	
 	public QualitativeResearch validateTitle() {
 		logger.info(methAccssed + getClass().getName() + "clickQualitativeRTab");
-		WebElement qualitativeresearchText = driver.findElement(By.xpath("//h1[normalize-space()='One tool for all your insights and analysis']"));
+		WebElement qualitativeresearchText = driver.findElement(By.xpath
+				("//h1[normalize-space()='One tool for all your insights and analysis']"));
 		String expected_title = "One tool for all your insights and analysis";
 		action.softAssert(qualitativeresearchText, expected_title);
 		logger.info(methoExited + getClass().getName() + "clickQualitativeRTab");

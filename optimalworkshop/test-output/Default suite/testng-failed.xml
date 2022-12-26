@@ -6,7 +6,8 @@
       <class name="com.atomation.test.test2">
         <methods>
           <include name="closing"/>
-          <include name="fftest"/>
+          <include name="chromeTest"/>
+          <include name="ieTest"/>
         </methods>
       </class> <!-- com.atomation.test.test2 -->
     </classes>

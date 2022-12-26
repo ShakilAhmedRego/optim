@@ -27,8 +27,9 @@ public class TreeTesting extends PageBase {
 	public TreeTesting validateTitle() {
 		logger.info(methAccssed + getClass().getName() + "clickTreeTestingTab");
 		WebElement treetestingText = driver
-				.findElement(By.xpath("//h1[normalize-space()='Build an information architecture that makes sense']"));
-		String expected_title = "Build an information architecture that makes sense";
+				.findElement(By.xpath("//h1[normalize-space()='Evaluate the findability of your content']"));
+		String expected_title = "Evaluate the findability of your content";
+				//"Evaluate the\\n\" + \"findability of your\\n\" + \"content";
 		action.softAssert(treetestingText, expected_title);
 		logger.info(methoExited + getClass().getName() + "clickTreeTestingTab");
 		return this;

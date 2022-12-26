@@ -25,8 +25,9 @@ public class OnlineSurveys extends PageBase {
 	public OnlineSurveys validateTitle() {
 		logger.info(methAccssed + getClass().getName() + "clickOnlineSurveysTab");
 		WebElement onlinesurveysText = driver
-				.findElement(By.xpath("//h1[normalize-space()='Run surveys to get the answers you need']"));
-		String expected_title = "Run surveys\n" + "to get the\n" + "answers you need";
+				.findElement(By.xpath("//h1[normalize-space()='Capture the experiences and opinions of your users']"));
+		String expected_title = "Capture the experiences and opinions of your users";
+				//"Capture the\n" + "experiences and\n" + "opinions of your\n" + "users";
 		action.softAssert(onlinesurveysText, expected_title);
 		logger.info(methoExited + getClass().getName() + "clickOnlineSurveysTab");
 		return this;

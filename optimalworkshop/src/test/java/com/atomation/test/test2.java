@@ -25,8 +25,8 @@ public class test2 extends PageBase {
 	@Test(priority = 1, enabled = true)
 	public void chromeTest() throws Exception {
 		System.out.println("we made to test");
-		driverfactory.createInstance("chrome");
-//		driverfactory.createInstance("chromeHTML");
+//		driverfactory.createInstance("chrome");
+		driverfactory.createInstance("chromeHTML");
 		driverfactory.navigateToURL(methAccssed);
 		driver.navigate().to("https://www.optimalworkshop.com");
 		basepage.clickOverviewTab().validateTitle().clickQualitativeRTab().validateTitle().clickCardSortingTab()
@@ -43,8 +43,8 @@ public class test2 extends PageBase {
 	@Test(priority = 2, enabled = true)
 	public void fftest() throws Exception {
 		System.out.println("we made to test");
-		driverfactory.createInstance("firefox");
-//		driverfactory.createInstance("firefoxHTML");
+//		driverfactory.createInstance("firefox");
+		driverfactory.createInstance("firefoxHTML");
 		driverfactory.navigateToURL(methAccssed);
 		driver.navigate().to("https://www.optimalworkshop.com");
 		basepage.clickOverviewTab().validateTitle().clickQualitativeRTab().validateTitle().clickCardSortingTab()
@@ -62,8 +62,8 @@ public class test2 extends PageBase {
 	@Test(priority = 3, enabled = true)
 	public void ieTest() throws Exception {
 		System.out.println("we made to test");
-		driverfactory.createInstance("edge");
-//		driverfactory.createInstance("edgeHTML");
+//		driverfactory.createInstance("edge");
+		driverfactory.createInstance("edgeHTML");
 		driverfactory.navigateToURL(methAccssed);
 		driver.navigate().to("https://www.optimalworkshop.com");
 		basepage.clickOverviewTab().validateTitle().clickQualitativeRTab().validateTitle().clickCardSortingTab()

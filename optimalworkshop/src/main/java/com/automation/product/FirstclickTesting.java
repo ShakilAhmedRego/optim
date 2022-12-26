@@ -25,8 +25,10 @@ public class FirstclickTesting  extends PageBase{
 	
 	public FirstclickTesting validateTitle() {
 		logger.info(methAccssed + getClass().getName() + "clickFirstclickTestingTab");
-		WebElement firstclicktestingText = driver.findElement(By.xpath("//h1[normalize-space()='Make sure the first click is the right click']"));
-		String expected_title = "Make sure the first click is the right click";
+		WebElement firstclicktestingText = 
+				driver.findElement(By.xpath("//h1[normalize-space()='Learn which actions your users reach for first']"));
+		String expected_title = "Learn which actions your users reach for first";
+			//	"Learn which actions\\n\" + \"your users reach for\\n\" + \"first";
 		action.softAssert(firstclicktestingText, expected_title);
 		logger.info(methoExited + getClass().getName() + "clickFirstclickTestingTab");
 		return this;

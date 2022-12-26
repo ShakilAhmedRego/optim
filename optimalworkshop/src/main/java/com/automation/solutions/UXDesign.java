@@ -24,6 +24,7 @@ public class UXDesign extends PageBase {
 		logger.info(methAccssed + getClass().getName() + "clickUXDesign");
 		WebElement uxdesignText = driver.findElement(By.xpath("//h1[normalize-space()='Swift design evaluation, so you can ship faster']"));
 		String expected_title = "Swift design evaluation, so you can ship faster";
+//				"Swift design\\n\" + \"evaluation, so you\\n\" + \"can ship faster";
 		action.softAssert(uxdesignText, expected_title);
 		logger.info(methoExited + getClass().getName() + "clickUXDesign");
 		return this;
